@@ -25,11 +25,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default" id="increase-phone"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handleProductChange('phone', false)"><i class="fas fa-minus"></i></button>
+                           <input type="text" class="form-control text-center" value="1" id="phone-value">
+                           <button class="btn btn-default" onclick="handleProductChange(true)"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
+                        <h5>$<span id="total-phone-prize">1159</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -43,9 +43,9 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" onclick="handleProductChange(false)"><i class="fas fa-minus"></i></button>
+                           <button class="btn btn-default" onclick="handleCasingChange(false)"><i class="fas fa-minus"></i></button>
                            <input type="text" class="form-control text-center" value="1" id="case-count">
-                           <button class="btn btn-default" onclick="handleProductChange(true)"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handleCasingChange(true)"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$<span id="case-total-cost">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
